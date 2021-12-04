@@ -1,6 +1,6 @@
 {
     "python.testing.pytestArgs": [
-        "ex_01_04_bingo"
+        "year_2021.ex_01_04_bingo"
     ],
     "python.testing.unittestEnabled": true,
     "python.testing.pytestEnabled": false,
