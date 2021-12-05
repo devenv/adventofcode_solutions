@@ -1,7 +1,7 @@
 
 last = [0, 0, 0]
 count = 0
-with open('ex_01_01/input.txt') as f:
+with open('year_2021/ex_01_01/input.txt') as f:
     for line in f.readlines():
         n = int(line.strip())
         s = n + last[1] + last[2]
