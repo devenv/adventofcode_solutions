@@ -1,6 +1,5 @@
 from dataclasses import dataclass
 from math import sqrt
-from contextlib import contextmanager
 
 
 @dataclass
