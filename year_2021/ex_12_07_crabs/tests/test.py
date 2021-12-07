@@ -1,5 +1,5 @@
 from unittest import TestCase
-from year_2021.ex_01_07_crabs.solution import Crabs
+from year_2021.ex_12_07_crabs.solution import Crabs
 
 class Test(TestCase):
 

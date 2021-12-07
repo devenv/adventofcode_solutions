@@ -1,5 +1,5 @@
 from unittest import TestCase
-from year_2021.ex_01_05_vectors.solution import Point, Vector, Board
+from year_2021.ex_12_05_vectors.solution import Point, Vector, Board
 
 class Test(TestCase):
 

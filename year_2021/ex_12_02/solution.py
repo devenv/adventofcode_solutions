@@ -1,7 +1,7 @@
 h = 0
 d = 0
 a = 0
-with open('year_2021/ex_01_02/input.txt') as f:
+with open('year_2021/ex_12_02/input.txt') as f:
     for line in f.readlines():
         x = int(line.split(' ')[1])
         match line.split(' ')[0]:

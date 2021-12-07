@@ -62,7 +62,7 @@ class School:
 
 
 if __name__ == "__main__":
-    with open("year_2021/ex_01_06_fish/input.txt") as fp:
+    with open("year_2021/ex_12_06_fish/input.txt") as fp:
         input = [line.strip() for line in fp.readlines()]
 
     school = School()

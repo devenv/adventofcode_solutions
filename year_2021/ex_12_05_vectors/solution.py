@@ -59,7 +59,7 @@ class Board:
 
 
 if __name__ == "__main__":
-    with open("year_2021/ex_01_05_vectors/input.txt") as fp:
+    with open("year_2021/ex_12_05_vectors/input.txt") as fp:
         input = [line.strip() for line in fp.readlines()]
 
     all_vectors = [Vector.from_line(line) for line in input]

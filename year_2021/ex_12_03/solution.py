@@ -48,7 +48,7 @@ class Bits:
 
 if __name__ == "__main__":
     bits = None
-    with open('ex_01_03/input.txt') as f:
+    with open('ex_12_03/input.txt') as f:
         for line in f.readlines():
             if not bits:
                 bits = Bits(len(line.strip()))
@@ -58,7 +58,7 @@ if __name__ == "__main__":
 
 
     data = []
-    with open('year_2021/ex_01_03/input.txt') as f:
+    with open('year_2021/ex_12_03/input.txt') as f:
         data = [line.strip() for line in f.readlines()]
 
     def find(data, oc):

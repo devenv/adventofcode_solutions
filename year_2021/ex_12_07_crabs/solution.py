@@ -33,7 +33,7 @@ class Crabs:
 
 
 if __name__ == "__main__":
-    with open("year_2021/ex_01_07_crabs/input.txt") as fp:
+    with open("year_2021/ex_12_07_crabs/input.txt") as fp:
         input = [line.strip() for line in fp.readlines()]
 
     crabs = Crabs([int(n) for n in input[0].split(',')])

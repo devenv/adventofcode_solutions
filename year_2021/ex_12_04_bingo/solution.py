@@ -68,7 +68,7 @@ class Bingo:
     boards: List[Board]
 
 if __name__ == "__main__":
-    with open("year_2021/ex_01_04_bingo/input.txt") as fp:
+    with open("year_2021/ex_12_04_bingo/input.txt") as fp:
         input = [line.strip() for line in fp.readlines()]
         loader = Loader()
         numbers = loader.load_numbers(input[0])
