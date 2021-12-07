@@ -1,3 +1,4 @@
+from typing import List
 from dataclasses import dataclass
 
 
@@ -20,7 +21,7 @@ class Fish:
         return f"{self.timer}:{self.amount}"
 
 class School:
-    fishes: list[Fish]
+    fishes: List[Fish]
 
     def __init__(self):
         self.fishes = []

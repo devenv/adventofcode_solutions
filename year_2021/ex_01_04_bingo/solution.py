@@ -1,3 +1,4 @@
+from typing import List
 from dataclasses import dataclass
 
 
@@ -12,7 +13,7 @@ class Cell:
 
 @dataclass
 class Board:
-    cells: list[list[Cell]]
+    cells: List[List[Cell]]
 
     def is_bingo(self):
         return (
@@ -64,7 +65,7 @@ class Loader:
         return boards
 
 class Bingo:
-    boards: list[Board]
+    boards: List[Board]
 
 if __name__ == "__main__":
     with open("year_2021/ex_01_04_bingo/input.txt") as fp:
