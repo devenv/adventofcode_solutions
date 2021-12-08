@@ -1,5 +1,6 @@
 from typing import List
 from dataclasses import dataclass
+
 from year_2021.utils.input import read_input
 
 

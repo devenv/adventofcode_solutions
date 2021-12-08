@@ -2,6 +2,8 @@ from typing import List
 from dataclasses import dataclass
 from statistics import median
 
+from year_2021.utils.input import read_input
+
 
 class Crabs:
     positions: List[int]
@@ -33,9 +35,7 @@ class Crabs:
 
 
 if __name__ == "__main__":
-    with open("year_2021/ex_12_07_crabs/input.txt") as fp:
-        input = [line.strip() for line in fp.readlines()]
-
+    input = read_input()
     crabs = Crabs([int(n) for n in input[0].split(',')])
     print(crabs.best_target())
     print(crabs.fuel_consumtion_to(crabs.best_target()))
