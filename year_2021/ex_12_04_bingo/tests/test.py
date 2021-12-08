@@ -30,18 +30,18 @@ class Test(TestCase):
             [Cell(2), Cell(3)],
         ])
         board.mark(2)
-        self.assertEqual(board, Board([
+        self.assertEquals(board, Board([
             [Cell(1), Cell(2, True)],
             [Cell(2, True), Cell(3)],
         ]))
 
     def test_numbers(self):
         input = "1,2,3,4"
-        self.assertEqual(Loader().load_numbers(input), [1, 2, 3, 4])
+        self.assertEquals(Loader().load_numbers(input), [1, 2, 3, 4])
 
     def test_load_boards(self):
         input = ["1 2", "2 3", "", "3 4", "4 5"]
-        self.assertEqual(Loader().load_boards(input), [
+        self.assertEquals(Loader().load_boards(input), [
             Board([
                 [Cell(1), Cell(2)],
                 [Cell(2), Cell(3)],
