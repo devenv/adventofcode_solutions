@@ -1,5 +1,8 @@
 from enum import Enum
 
+from year_2021.utils.input import read_input
+
+
 def dec(line):
     return int(line, 2)
 
@@ -48,18 +51,14 @@ class Bits:
 
 if __name__ == "__main__":
     bits = None
-    with open('ex_01_03/input.txt') as f:
-        for line in f.readlines():
-            if not bits:
-                bits = Bits(len(line.strip()))
-            bits.add(line.strip())
+    input = read_input()
+    for line in input:
+        if not bits:
+            bits = Bits(len(line.strip()))
+        bits.add(line.strip())
     print(bits.bits)
     print(bits.power())
 
-
-    data = []
-    with open('year_2021/ex_01_03/input.txt') as f:
-        data = [line.strip() for line in f.readlines()]
 
     def find(data, oc):
         n = 0
@@ -76,8 +75,8 @@ if __name__ == "__main__":
         return data[0]
 
 
-    o_winner = find(data, OC.OXYGEN)
-    c_winner = find(data, OC.CARBON)
+    o_winner = find(input, OC.OXYGEN)
+    c_winner = find(input, OC.CARBON)
     print(o_winner)
     print(c_winner)
     print(dec(o_winner) * dec(c_winner))

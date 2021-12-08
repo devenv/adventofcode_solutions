@@ -1,5 +1,5 @@
 from unittest import TestCase
-from year_2021.ex_01_04_bingo.solution import Board, Cell, Loader
+from ..solution import Board, Cell, Loader
 
 class Test(TestCase):
 

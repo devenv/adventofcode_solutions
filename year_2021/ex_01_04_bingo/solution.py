@@ -1,5 +1,7 @@
 from dataclasses import dataclass
 
+from year_2021.utils.input import read_input
+
 
 @dataclass
 class Cell:
@@ -67,11 +69,10 @@ class Bingo:
     boards: list[Board]
 
 if __name__ == "__main__":
-    with open("year_2021/ex_01_04_bingo/input.txt") as fp:
-        input = [line.strip() for line in fp.readlines()]
-        loader = Loader()
-        numbers = loader.load_numbers(input[0])
-        boards = loader.load_boards(input[2:])
+    input = read_input()
+    loader = Loader()
+    numbers = loader.load_numbers(input[0])
+    boards = loader.load_boards(input[2:])
     winner = None
 
     for number in numbers:

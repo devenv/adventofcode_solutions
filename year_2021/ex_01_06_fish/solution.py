@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from year_2021.utils.input import read_input
 
 
 @dataclass
@@ -61,8 +62,7 @@ class School:
 
 
 if __name__ == "__main__":
-    with open("year_2021/ex_01_06_fish/input.txt") as fp:
-        input = [line.strip() for line in fp.readlines()]
+    input = read_input()
 
     school = School()
     for n in input[0].split(','):

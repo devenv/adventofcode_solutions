@@ -1,6 +1,8 @@
 from dataclasses import dataclass
 from math import sqrt
 
+from year_2021.utils.input import read_input
+
 
 @dataclass
 class Point:
@@ -16,7 +18,7 @@ class Vector:
     p2: Point
 
     @classmethod
-    def from_line(line):
+    def from_line(cls, line):
         p1, _, p2 = line.split(' ')
         p1_x, p1_y = p1.split(',')
         p2_x, p2_y = p2.split(',')
@@ -59,9 +61,7 @@ class Board:
 
 
 if __name__ == "__main__":
-    with open("year_2021/ex_01_05_vectors/input.txt") as fp:
-        input = [line.strip() for line in fp.readlines()]
-
+    input = read_input()
     all_vectors = [Vector.from_line(line) for line in input]
 
     vectors = [vector for vector in all_vectors if vector.horvertical()]
