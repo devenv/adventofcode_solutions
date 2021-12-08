@@ -1,3 +1,4 @@
+from typing import List
 from dataclasses import dataclass
 
 from year_2021.utils.input import read_input
@@ -14,7 +15,7 @@ class Cell:
 
 @dataclass
 class Board:
-    cells: list[list[Cell]]
+    cells: List[List[Cell]]
 
     def is_bingo(self):
         return (
@@ -66,7 +67,7 @@ class Loader:
         return boards
 
 class Bingo:
-    boards: list[Board]
+    boards: List[Board]
 
 if __name__ == "__main__":
     input = read_input()
