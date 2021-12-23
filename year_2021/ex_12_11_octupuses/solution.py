@@ -45,7 +45,7 @@ class School:
             for y in range(len(self.octopuses[0])):
                 self.tick_octopus(x, y)
 
-        # tick flashed
+        # tick flashed neighbors
         flashed_not_processed = True
         while flashed_not_processed:
             flashed_not_processed = False
